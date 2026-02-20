@@ -21,8 +21,8 @@ with colC:st.image('logo-piad.png', use_column_width=True)
 
 
 #ETAPA DE JUEGO
-ataque = ['Ataque', 'Tran. Defensa - Ataque']
-defensa= ['Defensa', 'Tran. Ataque - Defensa']
+ataque = ['Ataque', 'Tran. Defensa-Ataque']
+defensa= ['Defensa', 'Tran. Ataque-Defensa']
 
 #------------ 1. MENU LATERAL
 menu_miclub = ['Informe de partido','Informe acumulado']

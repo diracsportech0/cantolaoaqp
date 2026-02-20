@@ -6,7 +6,7 @@ from functions import player_passmap,graph_barras, heat_map
 
 #----------------------
 
-st.write('NO DIDSPONIBLE')
+st.write('NO DISPONIBLE')
 
 
 
