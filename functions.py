@@ -441,8 +441,8 @@ def tipo_tiros_goles(df,output):
     df_tiros = df[df['output'].isin([output])].copy()
 
     # 2. Definir la dirección (Eje X: A favor vs En contra)
-    en_contra = ['Tran. Ataque - Defensa', 'Defensa', 'ABP en contra']
-    a_favor = ['Tran. Defensa - Ataque', 'Ataque', 'ABP a favor']
+    en_contra = ['Tran. Ataque-Defensa', 'Defensa', 'ABP en contra']
+    a_favor = ['Tran. Defensa-Ataque', 'Ataque', 'ABP a favor']
 
     def definir_direccion(fase):
         if fase in a_favor: return 'A Favor'
@@ -453,8 +453,8 @@ def tipo_tiros_goles(df,output):
 
     # 3. Simplificar las Fases (Agrupación para el color)
     mapa_fases = {
-        'Tran. Ataque - Defensa': 'Transicion',
-        'Tran. Defensa - Ataque': 'Transicion',
+        'Tran. Ataque-Defensa': 'Transicion',
+        'Tran. Defensa-Ataque': 'Transicion',
         'Ataque': 'Elaborado',
         'Defensa': 'Elaborado',
         'ABP a favor': 'ABP',
