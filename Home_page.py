@@ -19,7 +19,7 @@ df_matches = pd.read_excel('Matches.xlsx')
 
 
 #FORMATO
-st.header(f'Bienvenidos TIZNADOS F.C.!!')
+st.header(f'Bienvenido CANTOLAO AREQUIPA!!')
 
 st.write("Videoteca: Partidos completos")
 
