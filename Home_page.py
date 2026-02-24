@@ -24,6 +24,7 @@ st.header(f'Bienvenido CANTOLAO AREQUIPA!!')
 st.write("Videoteca: Partidos completos")
 
 df_matches = df_matches.dropna(subset=['video'])
+df_matches = df_matches[df_matches.Propio==True]
 #rivales = df_matches['match_filter'].values
 etapa = set(df_matches['Etapa'].values)
 

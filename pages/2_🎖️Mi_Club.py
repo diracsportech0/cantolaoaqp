@@ -30,6 +30,16 @@ choice2 = st.sidebar.radio("Submenú - Miclub", menu_miclub, 0)
 
 if choice2 == 'Informe de partido':
 
+    # Barra lateral
+    #RIVAL
+    rivales = df.Rival.unique()
+    n_partido = len(rivales)-1
+    menu_match = st.sidebar.selectbox(
+        "Partido",
+        rivales,
+        n_partido)
+    df = df[df.Rival==menu_match]
+
     etapas_juego = ['Ataque', 'Defensa','Pases']
 
     menu_subinforme = st.sidebar.selectbox(
