@@ -11,7 +11,7 @@ df_players_excel = pd.read_excel('players.xlsx')
 # Agrupar por Partido, Jugador y Evento y contar ocurrencias
 grouped = df.groupby(['Rival', 'player', 'Event']).size().reset_index(name='count')
 # Pivotar los datos para transformar los eventos en columnas
-pivot_table = grouped.pivot_table(index=['rival', 'player'], columns='Event', values='count', fill_value=0)
+pivot_table = grouped.pivot_table(index=['Rival', 'player'], columns='Event', values='count', fill_value=0)
 # Restablecer el índice para que Partido y Jugador sean columnas nuevamente
 df_players_totalstats = pivot_table.reset_index()
 
