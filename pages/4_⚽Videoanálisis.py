@@ -174,7 +174,7 @@ elif choice == 'Jugadores':
     #Jugadores --OK
     menu_players = st.sidebar.selectbox(
         "Jugadores",
-        sorted(players_list),
+        players_list,
         0)
     #TERCIO -- OK
     menu_zone = st.sidebar.selectbox(
